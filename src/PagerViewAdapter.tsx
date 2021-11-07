@@ -122,6 +122,7 @@ export default function PagerViewAdapter<T extends Route>({
     render: (children) => (
       <AnimatedViewPager
         {...rest}
+        overScrollMode={'never'}
         ref={pagerRef}
         style={[styles.container, style]}
         initialPage={index}
